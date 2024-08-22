@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "e95387f00264eb0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d111690f85bd9eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "710c8bec701116ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaSctipt/DOM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38494fc8a32e32d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "52ec50f85e70ea93",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36807d13bc40f9d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a272f386138e8aa1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2f843822e10a957d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 286.5086555480957,
+    "collapsed": true
+  },
+  "right": {
+    "id": "bb8b2f5e6ddbafc9",
+    "type": "split",
+    "children": [
+      {
+        "id": "28d05d31fef47ba4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b09d25dfac94334",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JavaSctipt/DOM.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "0fa67e122fa2c1d9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JavaSctipt/DOM.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cfa2dc2be09fe806",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "39f702fa74113b53",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JavaSctipt/DOM.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 325.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false
+    }
+  },
+  "active": "710c8bec701116ce",
+  "lastOpenFiles": [
+    "bspwm/sxhkdrc.md",
+    "JavaSctipt/DOM.md",
+    "JavaSctipt/JavaScript.md",
+    "Проблемы линукс.md",
+    "JavaSctipt/Тернарный оператор.md",
+    "JavaSctipt/Массивы.md",
+    "JavaSctipt/Объект.md",
+    "JavaSctipt/Стрелочные функции.md",
+    "JavaSctipt/Функции.md",
+    "JavaSctipt/Переменные.md",
+    "JavaSctipt/Условное ветвление.md",
+    "JavaSctipt/Нестрогое равенство (==) и строгое равенство (===).md",
+    "JavaSctipt/Ввод данных.md",
+    "Браузерные события.md",
+    "Заметки/Заметки.md",
+    "JavaSctipt/Получение миниатюр поста.md",
+    "JavaSctipt/Switch.md",
+    "wordpress/README.md",
+    "wordpress/Обработка контактной формы.md",
+    "wordpress/Загрузка svg файлов в Wordpress.md",
+    "wordpress/Кастомная шапка.md",
+    "wordpress/Цикл на CFS.md",
+    "wordpress/Плагин CFS.md",
+    "wordpress/Кастомные заголовки.md",
+    "wordpress/Выбор логотипа.md",
+    "wordpress/Информация о сайте.md",
+    "wordpress/contact_form_7.png",
+    "wordpress/рубрики.png",
+    "wordpress/записи.png",
+    "JavaSctipt",
+    "Заметки",
+    "wordpress/Группа полей.png",
+    "wordpress/Установка Wordpress.png",
+    "wordpress/Элементы цикла 2.png",
+    "wordpress/Элементы цикла.png",
+    "wordpress/Цикл.png",
+    "wordpress/CFS.png",
+    "wordpress/Создать шаблон.png",
+    "wordpress",
+    "white hacker",
+    "obsidian-sync",
+    "Untitled Folder",
+    "obsidian",
+    "Linux",
+    "templates",
+    "bspwm",
+    "Без названия.canvas"
+  ]
+}
