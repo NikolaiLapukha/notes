@@ -11,8 +11,12 @@
             "id": "60872c6afc846c3d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "python/Функции.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "python/Функции.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "python/Функции.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "python/Функции.md"
+              }
             }
           }
         ],
@@ -142,8 +150,8 @@
   },
   "active": "60872c6afc846c3d",
   "lastOpenFiles": [
-    "python/Функции.md",
     "python/Содержание.md",
+    "python/Функции.md",
     "Проблемы линукс.md",
     "Установка wordpress на сервер на базе Ubuntu.md",
     "Настройка Neovim в новой системе.md",
