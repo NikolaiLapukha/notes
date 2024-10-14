@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2d111690f85bd9eb",
+        "id": "eac44796e89ad3d4",
         "type": "tabs",
         "children": [
           {
-            "id": "710c8bec701116ce",
+            "id": "54f1c749718d0995",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaSctipt/DOM.md",
+                "file": "python/Функции.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,16 +32,6 @@
         "id": "52ec50f85e70ea93",
         "type": "tabs",
         "children": [
-          {
-            "id": "36807d13bc40f9d8",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "a272f386138e8aa1",
             "type": "leaf",
@@ -64,13 +54,23 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "36807d13bc40f9d8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957,
-    "collapsed": true
+    "width": 286.5086555480957
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaSctipt/DOM.md",
+                "file": "python/Функции.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaSctipt/DOM.md",
+                "file": "python/Функции.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaSctipt/DOM.md"
+                "file": "python/Функции.md"
               }
             }
           }
@@ -148,34 +148,38 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "710c8bec701116ce",
+  "active": "54f1c749718d0995",
   "lastOpenFiles": [
-    "bspwm/sxhkdrc.md",
-    "JavaSctipt/DOM.md",
-    "JavaSctipt/JavaScript.md",
+    "python/Содержание.md",
+    "python/Функции.md",
     "Проблемы линукс.md",
-    "JavaSctipt/Тернарный оператор.md",
-    "JavaSctipt/Массивы.md",
-    "JavaSctipt/Объект.md",
-    "JavaSctipt/Стрелочные функции.md",
-    "JavaSctipt/Функции.md",
+    "Установка wordpress на сервер на базе Ubuntu.md",
+    "Настройка Neovim в новой системе.md",
+    "python/Списки (массивы).md",
+    "python/Словари.md",
+    "python/pygame.md",
+    "python/Строки.md",
+    "python/Сортировка.md",
+    "python/Кортежи.md",
+    "python/Обработка исключений.md",
+    "python/Циклы.md",
+    "python/Pasted image 20241008154512.png",
+    "python/Pasted image 20241008154245.png",
+    "python/Pasted image 20240901205321.png",
+    "python/Генераторы.md",
+    "python/Множества.md",
+    "python/Работа с файлами.md",
+    "python/Модули и пакеты.md",
+    "python/Ввод - вывод.md",
+    "python/Математические функции.md",
+    "python/Переменные.md",
     "JavaSctipt/Переменные.md",
-    "JavaSctipt/Условное ветвление.md",
-    "JavaSctipt/Нестрогое равенство (==) и строгое равенство (===).md",
-    "JavaSctipt/Ввод данных.md",
-    "Браузерные события.md",
-    "Заметки/Заметки.md",
-    "JavaSctipt/Получение миниатюр поста.md",
-    "JavaSctipt/Switch.md",
-    "wordpress/README.md",
-    "wordpress/Обработка контактной формы.md",
-    "wordpress/Загрузка svg файлов в Wordpress.md",
-    "wordpress/Кастомная шапка.md",
-    "wordpress/Цикл на CFS.md",
-    "wordpress/Плагин CFS.md",
-    "wordpress/Кастомные заголовки.md",
-    "wordpress/Выбор логотипа.md",
-    "wordpress/Информация о сайте.md",
+    "JavaSctipt/JavaScript.md",
+    "JavaSctipt/DOM.md",
+    "python/Операторы упаковки и распаковки коллекций.md",
+    "break и continue.md",
+    "python/ООП.md",
+    "python",
     "wordpress/contact_form_7.png",
     "wordpress/рубрики.png",
     "wordpress/записи.png",
@@ -185,9 +189,6 @@
     "wordpress/Установка Wordpress.png",
     "wordpress/Элементы цикла 2.png",
     "wordpress/Элементы цикла.png",
-    "wordpress/Цикл.png",
-    "wordpress/CFS.png",
-    "wordpress/Создать шаблон.png",
     "wordpress",
     "white hacker",
     "obsidian-sync",
@@ -195,7 +196,6 @@
     "obsidian",
     "Linux",
     "templates",
-    "bspwm",
     "Без названия.canvas"
   ]
 }

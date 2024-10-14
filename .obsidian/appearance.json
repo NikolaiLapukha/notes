@@ -1,7 +1,9 @@
 {
-  "accentColor": "#000000",
+  "accentColor": "",
   "cssTheme": "",
   "theme": "system",
   "nativeMenus": true,
-  "baseFontSize": 20
+  "baseFontSize": 24,
+  "interfaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "textFontFamily": "JetBrainsMono Nerd Font Mono"
 }
