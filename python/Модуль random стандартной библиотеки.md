@@ -19,3 +19,10 @@ import random
 print(random.randint(1, 5)) # 5
 ```
 
+## `random.randrange(от, до, шаг)` - Возвращает случайное целое число в заданном диапазоне также позволяет задать шаг
+
+```python
+import random
+print(random.randrange(2, 10, 2)) # 6
+```
+
