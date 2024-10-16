@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Функции.md",
+                "file": "python/Модуль random стандартной библиотеки.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/Функции.md",
+                "file": "python/Модуль random стандартной библиотеки.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/Функции.md",
+                "file": "python/Модуль random стандартной библиотеки.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "python/Функции.md"
+                "file": "python/Модуль random стандартной библиотеки.md"
               }
             }
           }
@@ -151,34 +151,34 @@
   "active": "60872c6afc846c3d",
   "lastOpenFiles": [
     "python/Содержание.md",
+    "python/Модуль random стандартной библиотеки.md",
+    "python/Циклы.md",
+    "python/Строки.md",
+    "python/Битовые операции И, ИЛИ, НЕ, XOR.md",
+    "python/Списки (массивы).md",
+    "python/Работа с файлами.md",
+    "python/Математические функции.md",
     "python/Функции.md",
     "Проблемы линукс.md",
     "Установка wordpress на сервер на базе Ubuntu.md",
     "Настройка Neovim в новой системе.md",
-    "python/Списки (массивы).md",
     "python/Словари.md",
     "python/pygame.md",
-    "python/Строки.md",
     "python/Сортировка.md",
     "python/Кортежи.md",
     "python/Обработка исключений.md",
-    "python/Циклы.md",
     "python/Pasted image 20241008154512.png",
     "python/Pasted image 20241008154245.png",
     "python/Pasted image 20240901205321.png",
     "python/Генераторы.md",
     "python/Множества.md",
-    "python/Работа с файлами.md",
     "python/Модули и пакеты.md",
     "python/Ввод - вывод.md",
-    "python/Математические функции.md",
     "python/Переменные.md",
     "JavaSctipt/Переменные.md",
     "JavaSctipt/JavaScript.md",
     "JavaSctipt/DOM.md",
     "python/Операторы упаковки и распаковки коллекций.md",
-    "break и continue.md",
-    "python/ООП.md",
     "python",
     "wordpress/contact_form_7.png",
     "wordpress/рубрики.png",
