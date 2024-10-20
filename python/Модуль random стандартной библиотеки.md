@@ -68,3 +68,33 @@ random.seed(3)
 lst = [random.randint(1, 10) for i in range(11)]
 print(lst) 
 ```
+
+## Примеры программ
+
+**Программа которая случайно перемешивает столбцы матрицы**
+
+```python
+import sys
+import random
+# установка "зерна" датчика случайных чисел, чтобы получались одни и те же случайные величины
+random.seed(1)
+
+# считывание списка из входного потока
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+
+def shuffle_columns(lst):
+    shuffled_columns = list(zip(*lst))
+    random.shuffle(shuffled_columns)
+    return [list(column) for column in shuffled_columns]
+
+# Преобразование строки в двумерный список
+lst = [[int(x) for x in row.split()] for row in lst_in]
+
+# Перемешивание столбцов
+shuffled = shuffle_columns(lst)
+# обратная трансформация матрицы
+res = list(zip(*shuffled))
+# Вывод результата
+for row in res:
+    print(*row)
+```
