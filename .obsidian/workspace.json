@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fb866d48ba6d2144",
+        "id": "db084f4586da01bd",
         "type": "tabs",
         "children": [
           {
-            "id": "60872c6afc846c3d",
+            "id": "7fc2277ce89920cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Модуль random стандартной библиотеки.md",
+                "file": "python/ООП.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "ООП"
             }
           }
         ]
@@ -44,7 +46,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
             }
           },
           {
@@ -52,7 +56,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
             }
           },
           {
@@ -62,7 +68,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
             }
           }
         ],
@@ -70,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957
+    "width": 286.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -86,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "python/Модуль random стандартной библиотеки.md",
+                "file": "notes/python/Конструкция match-case.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +103,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для Конструкция match-case"
             }
           },
           {
@@ -103,10 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "python/Модуль random стандартной библиотеки.md",
+                "file": "notes/python/Конструкция match-case.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из Конструкция match-case"
             }
           },
           {
@@ -117,7 +130,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
             }
           },
           {
@@ -125,9 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "python/Модуль random стандартной библиотеки.md"
-              }
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Структура"
             }
           }
         ],
@@ -148,54 +163,54 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "60872c6afc846c3d",
+  "active": "7fc2277ce89920cd",
   "lastOpenFiles": [
     "python/Содержание.md",
-    "python/Модуль random стандартной библиотеки.md",
-    "python/Циклы.md",
-    "python/Строки.md",
-    "python/Битовые операции И, ИЛИ, НЕ, XOR.md",
-    "python/Списки (массивы).md",
-    "python/Работа с файлами.md",
-    "python/Математические функции.md",
-    "python/Функции.md",
-    "Проблемы линукс.md",
-    "Установка wordpress на сервер на базе Ubuntu.md",
-    "Настройка Neovim в новой системе.md",
-    "python/Словари.md",
-    "python/pygame.md",
-    "python/Сортировка.md",
-    "python/Кортежи.md",
-    "python/Обработка исключений.md",
-    "python/Pasted image 20241008154512.png",
-    "python/Pasted image 20241008154245.png",
-    "python/Pasted image 20240901205321.png",
-    "python/Генераторы.md",
-    "python/Множества.md",
-    "python/Модули и пакеты.md",
-    "python/Ввод - вывод.md",
-    "python/Переменные.md",
-    "JavaSctipt/Переменные.md",
-    "JavaSctipt/JavaScript.md",
-    "JavaSctipt/DOM.md",
-    "python/Операторы упаковки и распаковки коллекций.md",
-    "python",
-    "wordpress/contact_form_7.png",
-    "wordpress/рубрики.png",
-    "wordpress/записи.png",
-    "JavaSctipt",
-    "Заметки",
-    "wordpress/Группа полей.png",
-    "wordpress/Установка Wordpress.png",
-    "wordpress/Элементы цикла 2.png",
-    "wordpress/Элементы цикла.png",
-    "wordpress",
-    "white hacker",
-    "obsidian-sync",
-    "Untitled Folder",
-    "obsidian",
-    "Linux",
-    "templates",
+    "python/ООП.md",
+    "notes/python/Содержание.md",
+    "notes2/Заметки/Заметки.md",
+    "notes2/wordpress/рубрики.png",
+    "notes2/wordpress/записи.png",
+    "notes2/wordpress/Элементы цикла.png",
+    "notes2/wordpress/Элементы цикла 2.png",
+    "notes2/wordpress/Шаблон страницы.md",
+    "notes2/wordpress/Цикл.png",
+    "notes2/wordpress/Цикл на CFS.md",
+    "notes2/wordpress/Фон.png",
+    "notes2/wordpress/Установка Wordpress.png",
+    "notes2/wordpress/Установка Wordpress.md",
+    "notes2/wordpress/Тема.png",
+    "notes2/wordpress/Создать шаблон.png",
+    "notes2/wordpress/Создать страницу.png",
+    "notes2/wordpress/Создание темы.md",
+    "notes2/wordpress/Подключение стилей.md",
+    "notes2/wordpress/Подключение скриптов.md",
+    "notes2/wordpress/Плагин CFS.md",
+    "notes2/wordpress/Ошибка 404.md",
+    "notes2/wordpress/Обработка контактной формы.md",
+    "notes2/wordpress/Кастомные заголовки.md",
+    "notes2/wordpress/Кастомная шапка.md",
+    "notes2/wordpress/Картинка на фон.md",
+    "notes2/wordpress/Информация о сайте.md",
+    "notes2/wordpress/Записи.md",
+    "notes2/wordpress/Загрузка svg файлов в Wordpress.md",
+    "notes2/wordpress/Выбор логотипа.md",
+    "notes2/wordpress/header footer.md",
+    "notes2/wordpress/README.md",
+    "notes2/white hacker/Эксплуатация известных уязвимостей сетевых сервисов.md",
+    "notes2/white hacker/Социальная инженерия.md",
+    "notes2/white hacker/Развитие хакера.md",
+    "notes2/white hacker/Разведка во внешней инфраструктуре заказчика.md",
+    "notes2/Заметки",
+    "notes2/wordpress",
+    "notes2/white hacker",
+    "notes2/templates",
+    "notes2/bspwm",
+    "notes2/python",
+    "notes2/JavaSctipt",
+    "notes2",
+    "notes/Заметки",
+    "notes/wordpress",
     "Без названия.canvas"
   ]
 }

@@ -130,3 +130,37 @@ match primary_keys:
     case _:  # wildcard
         print("неверный запрос")
 ```
+
+
+```python
+def book_to_tuple(data: dict | tuple | list) -> tuple | None:
+    match data:
+        case author, title, year:
+            price = None
+        case author, title, year, price, *_:
+            pass
+        case {'author': author, 'title': title, 'year': year, 'price': price}:
+            pass
+        case {'author': author, 'title': title, 'year': year}:
+            price = None
+        case _:  # wildcard
+            return None
+ 
+    return author, title, year, price
+```
+
+```python
+class Consts:
+    CMD_3 = 3
+    CMD_5 = 5
+ 
+ 
+cmd = 3
+ 
+match cmd:
+    case Consts.CMD_3:
+        print("3")
+    case Consts.CMD_5:
+        print("5")
+```
+
