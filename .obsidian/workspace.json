@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Функции.md",
+                "file": "python/ООП.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Функции"
+              "title": "ООП"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957
+    "width": 286.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -164,10 +165,12 @@
   },
   "active": "7fc2277ce89920cd",
   "lastOpenFiles": [
+    "Проблемы линукс.md",
     "python/Содержание.md",
     "python/Функции.md",
-    "Проблемы линукс.md",
     "python/ООП.md",
+    "python/Строки.md",
+    "python/Словари.md",
     "notes/python/Содержание.md",
     "notes2/Заметки/Заметки.md",
     "notes2/wordpress/рубрики.png",
@@ -198,8 +201,6 @@
     "notes2/wordpress/Выбор логотипа.md",
     "notes2/wordpress/header footer.md",
     "notes2/wordpress/README.md",
-    "notes2/white hacker/Эксплуатация известных уязвимостей сетевых сервисов.md",
-    "notes2/white hacker/Социальная инженерия.md",
     "notes2/Заметки",
     "notes2/wordpress",
     "notes2/white hacker",
