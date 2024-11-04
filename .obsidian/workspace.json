@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7fc2277ce89920cd",
+            "id": "a9f9be5b870e12a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957,
-    "collapsed": true
+    "width": 286.5086555480957
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -163,14 +162,19 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "7fc2277ce89920cd",
+  "active": "a9f9be5b870e12a1",
   "lastOpenFiles": [
-    "Проблемы линукс.md",
     "python/Содержание.md",
-    "python/Функции.md",
-    "python/ООП.md",
-    "python/Строки.md",
+    "python/Регулярные выражения.md",
     "python/Словари.md",
+    "python/Операторы упаковки и распаковки коллекций.md",
+    "python/Множества.md",
+    "python/ООП.md",
+    "python/Математические функции.md",
+    "python/Функции.md",
+    "python/Конструкция match-case.md",
+    "Проблемы линукс.md",
+    "python/Строки.md",
     "notes/python/Содержание.md",
     "notes2/Заметки/Заметки.md",
     "notes2/wordpress/рубрики.png",
@@ -196,11 +200,6 @@
     "notes2/wordpress/Кастомная шапка.md",
     "notes2/wordpress/Картинка на фон.md",
     "notes2/wordpress/Информация о сайте.md",
-    "notes2/wordpress/Записи.md",
-    "notes2/wordpress/Загрузка svg файлов в Wordpress.md",
-    "notes2/wordpress/Выбор логотипа.md",
-    "notes2/wordpress/header footer.md",
-    "notes2/wordpress/README.md",
     "notes2/Заметки",
     "notes2/wordpress",
     "notes2/white hacker",
