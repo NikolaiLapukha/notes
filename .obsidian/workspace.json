@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "28db617d311bf0ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python/Списки (массивы).md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Списки (массивы)"
-            }
-          },
-          {
-            "id": "2d5f813ad1ec3f83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Настройка Neovim в новой системе.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Настройка Neovim в новой системе"
-            }
-          },
-          {
             "id": "f7d8e1557c78076c",
             "type": "leaf",
             "state": {
@@ -48,9 +20,37 @@
               "icon": "lucide-file",
               "title": "Файловая структура"
             }
+          },
+          {
+            "id": "091504d0e0ff4b33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python/Списки (массивы).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Списки (массивы)"
+            }
+          },
+          {
+            "id": "a4e79988699c7e3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Командная оболочка/Grep.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grep"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,11 +191,15 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "2d5f813ad1ec3f83",
+  "active": "a4e79988699c7e3c",
   "lastOpenFiles": [
-    "python/Содержание.md",
+    "Командная оболочка/Содержание.md",
+    "Командная оболочка/Grep.md",
     "python/Списки (массивы).md",
+    "python/Содержание.md",
+    "python/Операторы упаковки и распаковки коллекций.md",
     "Командная оболочка/Файловая структура.md",
+    "Настройка Neovim в новой системе.md",
     "Проблемы линукс.md",
     "python/тип данных NoneType.md",
     "python/Строки.md",
@@ -207,7 +211,6 @@
     "python/Математические функции.md",
     "python/ООП.md",
     "Командная оболочка/Чтение файлов.md",
-    "Командная оболочка/Содержание.md",
     "Без названия 1.md",
     "Командная оболочка/Интерфейс командной строки.md",
     "Командная оболочка/Навигация.md",
@@ -216,11 +219,8 @@
     "Pasted image 20241107182957.png",
     "python/Циклы.md",
     "python/Словари.md",
-    "python/Операторы упаковки и распаковки коллекций.md",
     "python/Множества.md",
     "python/Функции.md",
-    "notes/python/Содержание.md",
-    "notes2/Заметки/Заметки.md",
     "notes2/wordpress/рубрики.png",
     "notes2/wordpress/записи.png",
     "notes2/wordpress/Элементы цикла.png",
