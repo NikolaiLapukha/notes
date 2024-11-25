@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Списки (массивы).md",
+                "file": "python/Кортежи.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Списки (массивы)"
+              "title": "Кортежи"
             }
           }
         ]
@@ -165,6 +165,9 @@
   "active": "8d643df2e580c17f",
   "lastOpenFiles": [
     "python/Содержание.md",
+    "python/Сортировка.md",
+    "python/Строки.md",
+    "python/Списки (массивы).md",
     "Командная оболочка/Содержание.md",
     "Командная оболочка/Переменные окружения.md",
     "Командная оболочка/Манипулирование файловой структурой.md",
@@ -177,11 +180,9 @@
     "Pasted image 20241107182957.png",
     "2024-11-07.md",
     "[.md",
-    "python/Списки (массивы).md",
     "python/Функции.md",
     "python/Словари.md",
     "python/Операторы упаковки и распаковки коллекций.md",
-    "python/Строки.md",
     "Командная оболочка/Grep.md",
     "python/Pasted image 20241008154512.png",
     "python/Циклы.md",
@@ -194,7 +195,6 @@
     "Проблемы линукс.md",
     "python/тип данных NoneType.md",
     "python/Регулярные выражения.md",
-    "python/Генераторы.md",
     "Командная оболочка",
     "notes2/wordpress/рубрики.png",
     "notes2/wordpress/записи.png",
