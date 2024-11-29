@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Кортежи.md",
+                "file": "Командная оболочка/Содержание.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Кортежи"
+              "title": "Содержание"
+            }
+          },
+          {
+            "id": "5eb87becfbcce1c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "python/Строки.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Строки"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,13 +177,19 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "8d643df2e580c17f",
+  "active": "5eb87becfbcce1c9",
   "lastOpenFiles": [
     "python/Содержание.md",
+    "Командная оболочка/Пользователи и группы.md",
+    "Командная оболочка/Содержание.md",
+    "Командная оболочка/История.md",
+    "python/Множества.md",
+    "python/Переменные.md",
+    "python/Операторы упаковки и распаковки коллекций.md",
+    "python/Кортежи.md",
     "python/Сортировка.md",
     "python/Строки.md",
     "python/Списки (массивы).md",
-    "Командная оболочка/Содержание.md",
     "Командная оболочка/Переменные окружения.md",
     "Командная оболочка/Манипулирование файловой структурой.md",
     "Командная оболочка/Потоки.md",
@@ -182,7 +203,6 @@
     "[.md",
     "python/Функции.md",
     "python/Словари.md",
-    "python/Операторы упаковки и распаковки коллекций.md",
     "Командная оболочка/Grep.md",
     "python/Pasted image 20241008154512.png",
     "python/Циклы.md",
@@ -190,11 +210,6 @@
     "white hacker/Атаки первичного доступа.md",
     "white hacker/Профессия — Белый Хакер.md",
     "white hacker/Карта действий белого хакер.md",
-    "Командная оболочка/Файловая структура.md",
-    "Настройка Neovim в новой системе.md",
-    "Проблемы линукс.md",
-    "python/тип данных NoneType.md",
-    "python/Регулярные выражения.md",
     "Командная оболочка",
     "notes2/wordpress/рубрики.png",
     "notes2/wordpress/записи.png",
