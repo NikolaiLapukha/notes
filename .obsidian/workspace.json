@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Функции.md",
+                "file": "python/Работа с файлами.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Функции"
+              "title": "Работа с файлами"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957
+    "width": 286.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -165,33 +166,33 @@
   "active": "509af97efcadf8ca",
   "lastOpenFiles": [
     "python/Содержание.md",
-    "python/Строки.md",
+    "Проблемы линукс.md",
+    "python/Работа с файлами.md",
     "python/Функции.md",
+    "python/Модуль String.md",
+    "python/Генераторы.md",
+    "python/Списки (массивы).md",
+    "python/Строки.md",
+    "python/Сортировка.md",
+    "Установка wordpress на сервер на базе Ubuntu.md",
+    "Pasted image 20241117181702.png",
     "Командная оболочка/Содержание.md",
     "Командная оболочка/Права доступа.md",
     "python/Числовые типы данных.md",
     "python/Модуль random стандартной библиотеки.md",
-    "python/Модуль String.md",
-    "python/Списки (массивы).md",
     "python/Модули и пакеты.md",
     "python/Словари.md",
     "python/Кортежи.md",
-    "Проблемы линукс.md",
     "python/Множества.md",
     "Заметки/Заметки.md",
     "Командная оболочка/Sudo.md",
     "Командная оболочка/Потоки.md",
-    "python/Сортировка.md",
     "python/Математические функции.md",
     "Командная оболочка/Пользователи и группы.md",
     "Командная оболочка/История.md",
     "python/Переменные.md",
     "python/Операторы упаковки и распаковки коллекций.md",
-    "Командная оболочка/Переменные окружения.md",
-    "Командная оболочка/Манипулирование файловой структурой.md",
-    "Командная оболочка/Пайплайн.md",
     "white hacker/1234535.png",
-    "Pasted image 20241117181702.png",
     "Pasted image 20241107182957.png",
     "python/Pasted image 20241008154512.png",
     "python/Pasted image 20240901205321.png",
