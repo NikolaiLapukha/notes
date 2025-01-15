@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/ООП.md",
+                "file": "python/Списки (массивы).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ООП"
+              "title": "Списки (массивы)"
             }
           }
         ]
@@ -164,17 +164,18 @@
   },
   "active": "509af97efcadf8ca",
   "lastOpenFiles": [
-    "python/Списки (массивы).md",
     "python/Содержание.md",
-    "python/Сортировка.md",
-    "python/Числовые типы данных.md",
+    "python/Строки.md",
     "python/Функции.md",
+    "python/Модуль random стандартной библиотеки.md",
+    "python/ООП.md",
+    "python/Словари.md",
+    "python/Сортировка.md",
+    "python/Списки (массивы).md",
+    "python/Числовые типы данных.md",
     "python/Математические функции.md",
     "python/Работа с файлами.md",
-    "python/Строки.md",
-    "python/Модуль random стандартной библиотеки.md",
     "Проблемы линукс.md",
-    "python/ООП.md",
     "python/Модуль String.md",
     "python/Генераторы.md",
     "Установка wordpress на сервер на базе Ubuntu.md",
@@ -182,7 +183,6 @@
     "Командная оболочка/Содержание.md",
     "Командная оболочка/Права доступа.md",
     "python/Модули и пакеты.md",
-    "python/Словари.md",
     "python/Кортежи.md",
     "python/Множества.md",
     "Заметки/Заметки.md",
