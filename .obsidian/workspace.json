@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Списки (массивы).md",
+                "file": "python/ООП.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Списки (массивы)"
+              "title": "ООП"
             }
           }
         ]
@@ -164,6 +164,7 @@
   },
   "active": "509af97efcadf8ca",
   "lastOpenFiles": [
+    "python/Списки (массивы).md",
     "python/Содержание.md",
     "python/Строки.md",
     "python/Функции.md",
@@ -171,7 +172,6 @@
     "python/ООП.md",
     "python/Словари.md",
     "python/Сортировка.md",
-    "python/Списки (массивы).md",
     "python/Числовые типы данных.md",
     "python/Математические функции.md",
     "python/Работа с файлами.md",
