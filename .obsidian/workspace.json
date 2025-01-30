@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957
+    "width": 286.5086555480957,
+    "collapsed": true
   },
   "right": {
     "id": "bb8b2f5e6ddbafc9",
@@ -164,13 +165,14 @@
   },
   "active": "509af97efcadf8ca",
   "lastOpenFiles": [
+    "python/Словари.md",
+    "python/ООП.md",
     "python/Списки (массивы).md",
+    "python/Регулярные выражения.md",
     "python/Содержание.md",
     "python/Строки.md",
     "python/Функции.md",
     "python/Модуль random стандартной библиотеки.md",
-    "python/ООП.md",
-    "python/Словари.md",
     "python/Сортировка.md",
     "python/Числовые типы данных.md",
     "python/Математические функции.md",
@@ -190,7 +192,6 @@
     "Командная оболочка/Потоки.md",
     "Командная оболочка/Пользователи и группы.md",
     "Командная оболочка/История.md",
-    "python/Переменные.md",
     "white hacker/1234535.png",
     "Pasted image 20241107182957.png",
     "python/Pasted image 20241008154512.png",
