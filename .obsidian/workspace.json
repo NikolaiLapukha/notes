@@ -67,7 +67,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
@@ -165,13 +166,13 @@
   },
   "active": "509af97efcadf8ca",
   "lastOpenFiles": [
-    "python/Словари.md",
+    "python/Содержание.md",
+    "python/Функции.md",
     "python/ООП.md",
+    "python/Словари.md",
     "python/Списки (массивы).md",
     "python/Регулярные выражения.md",
-    "python/Содержание.md",
     "python/Строки.md",
-    "python/Функции.md",
     "python/Модуль random стандартной библиотеки.md",
     "python/Сортировка.md",
     "python/Числовые типы данных.md",
