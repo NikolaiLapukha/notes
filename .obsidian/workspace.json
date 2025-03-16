@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Без названия.md",
+                "file": "Git/Рабочий процесс.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Без названия"
+              "title": "Рабочий процесс"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Без названия.md",
+                "file": "Git/Рабочий процесс.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Без названия"
+              "title": "Обратные ссылки для Рабочий процесс"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Без названия.md",
+                "file": "Git/Рабочий процесс.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Без названия"
+              "title": "Исходящие ссылки из Рабочий процесс"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Без названия.md",
+                "file": "Git/Рабочий процесс.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Структура Без названия"
+              "title": "Структура Рабочий процесс"
             }
           }
         ]
@@ -168,10 +168,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "e9b37d95771ee7c2",
+  "active": "d160a8cd351822da",
   "lastOpenFiles": [
     "Git/Что такое Git?.md",
-    "Git/Без названия.md",
+    "Git/Рабочий процесс.md",
     "Git"
   ]
 }
