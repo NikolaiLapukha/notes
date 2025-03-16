@@ -1,56 +1,54 @@
 {
   "main": {
-    "id": "e95387f00264eb0d",
+    "id": "8bba9c7c78ed577f",
     "type": "split",
     "children": [
       {
-        "id": "a39ee2630868e695",
+        "id": "e6fca155bf2323a5",
         "type": "tabs",
         "children": [
           {
-            "id": "509af97efcadf8ca",
+            "id": "d160a8cd351822da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Строки.md",
+                "file": "Git/Без названия.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Строки"
-            }
-          },
-          {
-            "id": "bba3de8226291da0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "python/Виртуальные окружения.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Виртуальные окружения"
+              "title": "Без названия"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "38494fc8a32e32d5",
+    "id": "c06b292a495b3bd2",
     "type": "split",
     "children": [
       {
-        "id": "52ec50f85e70ea93",
+        "id": "841673cb732b83b7",
         "type": "tabs",
         "children": [
           {
-            "id": "a272f386138e8aa1",
+            "id": "e9b37d95771ee7c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "9bdc22449f8b966a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,7 +65,7 @@
             }
           },
           {
-            "id": "2f843822e10a957d",
+            "id": "e5643c0e6c1caded",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -75,97 +73,89 @@
               "icon": "lucide-bookmark",
               "title": "Закладки"
             }
-          },
-          {
-            "id": "36807d13bc40f9d8",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Файловый менеджер"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 286.5086555480957
+    "width": 300
   },
   "right": {
-    "id": "bb8b2f5e6ddbafc9",
+    "id": "87d6623b50eabd07",
     "type": "split",
     "children": [
       {
-        "id": "28d05d31fef47ba4",
+        "id": "b3be331be279faad",
         "type": "tabs",
         "children": [
           {
-            "id": "4b09d25dfac94334",
+            "id": "303fab2acd57f982",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/python/Конструкция match-case.md",
-                "collapseAll": true,
+                "file": "Git/Без названия.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Обратные ссылки для Конструкция match-case"
+              "title": "Обратные ссылки для Без названия"
             }
           },
           {
-            "id": "0fa67e122fa2c1d9",
+            "id": "99aa3d9b89eda0c3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/python/Конструкция match-case.md",
+                "file": "Git/Без названия.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Конструкция match-case"
+              "title": "Исходящие ссылки из Без названия"
             }
           },
           {
-            "id": "cfa2dc2be09fe806",
+            "id": "1e3bd4289c1d2c56",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Теги"
             }
           },
           {
-            "id": "39f702fa74113b53",
+            "id": "57b4d261db2103de",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Git/Без названия.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-list",
-              "title": "Структура"
+              "title": "Структура Без названия"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 325.5,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -178,54 +168,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "bba3de8226291da0",
+  "active": "e9b37d95771ee7c2",
   "lastOpenFiles": [
-    "python/Содержание.md",
-    "python/Виртуальные окружения.md",
-    "python/Строки.md",
-    "python/Словари.md",
-    "python/Функции.md",
-    "python/Модуль random стандартной библиотеки.md",
-    "python/ООП.md",
-    "python/Списки (массивы).md",
-    "python/Условные операторы.md",
-    "Командная оболочка/Навигация.md",
-    "Командная оболочка/История.md",
-    "Командная оболочка/Интерфейс командной строки.md",
-    "Проблемы линукс.md",
-    "Установка wordpress на сервер на базе Ubuntu.md",
-    "Настройка Neovim в новой системе.md",
-    "python/Обработка исключений.md",
-    "python/Регулярные выражения.md",
-    "python/Сортировка.md",
-    "python/Числовые типы данных.md",
-    "python/Математические функции.md",
-    "python/Работа с файлами.md",
-    "python/Модуль String.md",
-    "python/Генераторы.md",
-    "Pasted image 20241117181702.png",
-    "Командная оболочка/Содержание.md",
-    "Командная оболочка/Права доступа.md",
-    "python/Модули и пакеты.md",
-    "white hacker/1234535.png",
-    "Pasted image 20241107182957.png",
-    "python/Pasted image 20241008154512.png",
-    "python/Pasted image 20240901205321.png",
-    "Командная оболочка",
-    "notes2/wordpress/рубрики.png",
-    "notes2/wordpress/записи.png",
-    "notes2/wordpress/Элементы цикла.png",
-    "notes2/wordpress/Элементы цикла 2.png",
-    "notes2/wordpress/Цикл.png",
-    "notes2/Заметки",
-    "notes2/wordpress",
-    "notes2/white hacker",
-    "notes2/templates",
-    "notes2/bspwm",
-    "notes2/python",
-    "notes2/JavaSctipt",
-    "notes2",
-    "notes/Заметки",
-    "Без названия.canvas"
+    "Git/Что такое Git?.md",
+    "Git/Без названия.md",
+    "Git"
   ]
 }
