@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Анализ сделанных изменений.md",
+                "file": "Git/Анализ сделанных изменений.md",
                 "mode": "source",
                 "source": false
               },
@@ -168,10 +168,10 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "d3d002a0100f3353",
+  "active": "e9b37d95771ee7c2",
   "lastOpenFiles": [
     "Git/Интеграция с GitHub.md",
-    "Анализ сделанных изменений.md",
+    "Git/Анализ сделанных изменений.md",
     "Git/Основные команды.md",
     "Git/Что такое Git?.md",
     "Git"
