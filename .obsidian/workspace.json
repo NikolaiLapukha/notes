@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1731b8bffaccc0b7",
+            "id": "eb49b2d6e457a2e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Отмена изменений.md",
+                "file": "python/Ввод - вывод.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Отмена изменений"
+              "title": "Ввод - вывод"
             }
           }
         ]
@@ -168,12 +168,25 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "1731b8bffaccc0b7",
+  "active": "eb49b2d6e457a2e7",
   "lastOpenFiles": [
+    "python/Списки (массивы).md",
+    "python/Содержание.md",
+    "python/Потоковый ввод stdin и вывод stdout.md",
+    "python/Ввод - вывод.md",
+    "python/Переменные.md",
+    "python/Функции.md",
+    "python/Условные операторы.md",
+    "python/Обработка исключений.md",
+    "python/Конструкция match-case.md",
+    "python/Сортировка.md",
+    "python/Строки.md",
+    "python/Модуль String.md",
+    "python/ООП.md",
+    "Git/Отмена изменений.md",
     "Git/Анализ сделанных изменений.md",
     "Git/Интеграция с GitHub.md",
     "Git/Основные команды.md",
-    "Git/Отмена изменений.md",
     "Git/Содержание.md",
     "Git/Что такое Git?.md",
     "Git"
