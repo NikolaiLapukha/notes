@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "eb49b2d6e457a2e7",
+            "id": "68456cff47df2e86",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Ввод - вывод.md",
+                "file": "python/Модуль datetime.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ввод - вывод"
+              "title": "Модуль datetime"
             }
           }
         ]
@@ -168,19 +168,23 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "eb49b2d6e457a2e7",
+  "active": "68456cff47df2e86",
   "lastOpenFiles": [
-    "python/Списки (массивы).md",
     "python/Содержание.md",
-    "python/Потоковый ввод stdin и вывод stdout.md",
+    "python/Множества.md",
+    "python/Модуль datetime.md",
+    "python/Списки (массивы).md",
+    "python/Сортировка.md",
+    "python/Строки.md",
+    "python/Словари.md",
+    "python/Модули и пакеты.md",
     "python/Ввод - вывод.md",
+    "python/Потоковый ввод stdin и вывод stdout.md",
     "python/Переменные.md",
     "python/Функции.md",
     "python/Условные операторы.md",
     "python/Обработка исключений.md",
     "python/Конструкция match-case.md",
-    "python/Сортировка.md",
-    "python/Строки.md",
     "python/Модуль String.md",
     "python/ООП.md",
     "Git/Отмена изменений.md",

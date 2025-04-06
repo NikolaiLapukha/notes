@@ -1,9 +1,10 @@
 {
-  "accentColor": "",
+  "accentColor": "#3bc464",
   "cssTheme": "Adwaita",
   "theme": "system",
   "nativeMenus": true,
   "baseFontSize": 24,
-  "interfaceFontFamily": "JetBrainsMono Nerd Font Mono",
-  "textFontFamily": "JetBrainsMono Nerd Font Mono"
+  "interfaceFontFamily": "Adwaita Mono",
+  "textFontFamily": "Adwaita Mono",
+  "monospaceFontFamily": "Adwaita Mono"
 }

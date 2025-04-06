@@ -1,7 +1,7 @@
 {
   "vimMode": true,
   "alwaysUpdateLinks": true,
-  "showInlineTitle": false,
+  "showInlineTitle": true,
   "readableLineLength": false,
   "showLineNumber": true
 }
