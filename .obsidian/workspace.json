@@ -171,9 +171,12 @@
   "active": "68456cff47df2e86",
   "lastOpenFiles": [
     "python/Содержание.md",
-    "python/Множества.md",
+    "python/Работа с файлами.md",
     "python/Модуль datetime.md",
+    "python/Циклы.md",
+    "python/Генераторы.md",
     "python/Списки (массивы).md",
+    "python/Множества.md",
     "python/Сортировка.md",
     "python/Строки.md",
     "python/Словари.md",

@@ -8,6 +8,7 @@
 - `timezone` - описывает время, руководствуясь стандартом UTC.
 
 # Тип данных `date`
+
 При создании новой даты (тип данных `date`) нужно указать год, месяц и день.
 
 ```python
@@ -56,6 +57,7 @@ print(date2.toordinal())
 730114
 ```
 # Тип данных time
+
 Тип данных (класс) `time` используется для представления данных о времени и включает информацию о часах, минутах, секундах и микросекундах. Данный тип данных полностью игнорирует информацию о дате.
 
 При создании времени (тип данных `time`) нужно указать часы, минуты, секунды и микросекунды.
@@ -73,6 +75,7 @@ print(type(my_time))
 
 
 # Сравнение дат и времени
+
 Дату (тип `date`) и время (тип `time`) можно сравнивать с помощью операторов `==, !=, <, >, <=` и  `>=`.
 
 ```python
@@ -95,7 +98,21 @@ False
 True
 ```
 
+## **`timedelta`** 
 
+`timedelta` — это класс из модуля `datetime` в Python, который представляет **разницу между двумя датами или временем**. Он используется для выполнения арифметических операций с датами.
+
+```python
+from datetime import datetime, timedelta
+
+start_date = datetime.strptime("05.11.2021", "%d.%m.%Y").date()
+end_date = datetime.strptime("09.11.2021", "%d.%m.%Y").date()
+
+current_date = start_date
+while current_date <= end_date:
+    print(current_date)  # Выводим каждую дату в диапазоне
+    current_date += timedelta(days=1)  # Увеличиваем дату на 1 день
+```
 # Встроенные функции str() и repr()
 
 На практике часто используются две встроенные функции `str()` и `repr()`. С их помощью можно получить строковое представление объекта.
@@ -347,3 +364,187 @@ print(type(my_time))
 <class 'datetime.date'>
 <class 'datetime.time'>
 ```
+
+# Тип данных datetime
+
+Типы данных `date` и `time` позволяют работать по отдельности с датами и временами. Однако на практике чаще требуется работать одновременно и с датой, и со временем. Для таких целей используется тип данных `datetime` из одноименного модуля `datetime`.
+
+Чтобы иметь возможность использовать этот тип данных, необходимо предварительно его импортировать из модуля `datetime`:
+
+```python
+from datetime import datetime
+```
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime
+
+my_datetime = datetime(1992, 10, 6, 9, 40, 23, 51204)    # создаем полную дату-время
+only_date = datetime(2021, 12, 31)                       # создаем дату-время с нулевой временной информацией
+
+print(my_datetime)
+print(only_date)
+print(type(my_datetime))
+```
+
+выводит:
+
+```python
+1992-10-06 09:40:23.051204
+2021-12-31 00:00:00
+<class 'datetime.datetime'>
+```
+
+## Методы combine(), date(), time()
+
+Сформировать новый объект типа `datetime` можно с помощью двух разных объектов, представляющих дату и время (`date` и `time`). Для этого используется метод `combine()`.
+
+Приведенный ниже код:
+
+```python
+from datetime import date, time, datetime
+
+my_date = date(1992, 10, 6)
+my_time = time(10, 45, 17)
+my_datetime = datetime.combine(my_date, my_time)
+
+print(my_datetime)
+```
+
+выводит:
+
+```no-highlight
+1992-10-06 10:45:17
+```
+
+Если, наоборот, нужно получить из даты-времени (тип `datetime`) по отдельности дату (тип `date`) и время (тип `time`), то используются методы `date()` и `time()` соответственно.
+
+```python
+from datetime import datetime
+
+my_datetime = datetime(2022, 10, 7, 14, 15, 45)
+my_date = my_datetime.date()                     # получаем только дату (тип date)
+my_time = my_datetime.time()                     # получаем только время (тип time)
+```
+
+## Методы now(), utcnow(), today()
+
+Для того, чтобы получить текущее время на момент исполнения программы, используются методы `now()` и `utcnow()` для локального и UTC времени соответственно.
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime
+
+datetime_now = datetime.now()
+datetime_utcnow = datetime.utcnow()
+
+print(datetime_now)           # текущее локальное время (московское) на момент запуска программы
+print(datetime_utcnow)        # текущее UTC время на момент запуска программы
+```
+
+выводит:
+
+```no-highlight
+2021-08-13 08:03:43.224568
+2021-08-13 05:03:43.224568
+```
+
+С выходом Python 3.12 метод `utcnow()` устарел и подготовлен к удалению в будущих версиях языка, поэтому вместо него рекомендуется использовать метод `now()`, указав в качестве аргумента константу `UTC` модуля `datetime`.
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime, UTC
+
+print(datetime.now(UTC))
+```
+
+
+## Метод timestamp()
+
+Метод `timestamp()` позволяет преобразовать объект типа `datetime` в количество секунд, прошедших с момента начала эпохи. Данный метод возвращает значение типа `float`.
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime
+
+my_datetime = datetime(2021, 10, 13, 8, 10, 23)
+
+print(my_datetime.timestamp())
+```
+
+выводит:
+
+```no-highlight
+1634101823.0
+```
+
+## Метод fromtimestamp()
+
+Метод `fromtimestamp()` позволяет преобразовать количество секунд, прошедших с момента начала эпохи, в объект типа `datetime`. Данный метод является обратным по отношению к методу `timestamp()`.
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime
+
+my_datetime = datetime.fromtimestamp(1634101823.0)
+
+print(my_datetime)
+```
+
+выводит:
+
+```no-highlight
+2021-10-13 08:10:23
+```
+
+## Метод strptime
+
+Метод преобразует строку (первый аргумент) в объект `datetime` согласно переданному формату (второй аргумент).
+
+Приведенный ниже код работает аналогично коду выше:
+
+```python
+from datetime import datetime
+
+datetime_str = input('Введите дату/время в формате ДД.ММ.ГГГГ ЧЧ:ММ:СС')
+
+my_datetime = datetime.strptime(datetime_str, '%d.%m.%Y %H:%M:%S')
+
+print(my_datetime)
+```
+
+Рассмотрим примеры работы данного метода.
+
+Приведенный ниже код:
+
+```python
+from datetime import datetime
+
+datetime0 = datetime.strptime('10.08.2034 13:55:59', '%d.%m.%Y %H:%M:%S')
+datetime1 = datetime.strptime('10/08/21', '%d/%m/%y')
+datetime2 = datetime.strptime('Tuesday 10, August 2021', '%A %d, %B %Y')
+datetime3 = datetime.strptime('18.20.34', '%H.%M.%S')
+datetime4 = datetime.strptime('2021/08/10', '%Y/%m/%d')
+datetime5 = datetime.strptime('10.08.2021 (Tuesday, August)', '%d.%m.%Y (%A, %B)')
+datetime6 = datetime.strptime('Year: 2021, Month: 08, Day: 10, Hour: 18.', 'Year: %Y, Month: %m, Day: %d, Hour: %H.')
+
+print(datetime0, datetime1, datetime2, datetime3, datetime4, datetime5, datetime6, sep='\n')
+```
+
+выводит:
+
+```no-highlight
+2034-08-10 13:55:59
+2021-08-10 00:00:00
+2021-08-10 00:00:00
+1900-01-01 18:20:34
+2021-08-10 00:00:00
+2021-08-10 00:00:00
+2021-08-10 18:00:00
+```
+
