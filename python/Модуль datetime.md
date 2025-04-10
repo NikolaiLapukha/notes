@@ -98,21 +98,6 @@ False
 True
 ```
 
-## **`timedelta`** 
-
-`timedelta` — это класс из модуля `datetime` в Python, который представляет **разницу между двумя датами или временем**. Он используется для выполнения арифметических операций с датами.
-
-```python
-from datetime import datetime, timedelta
-
-start_date = datetime.strptime("05.11.2021", "%d.%m.%Y").date()
-end_date = datetime.strptime("09.11.2021", "%d.%m.%Y").date()
-
-current_date = start_date
-while current_date <= end_date:
-    print(current_date)  # Выводим каждую дату в диапазоне
-    current_date += timedelta(days=1)  # Увеличиваем дату на 1 день
-```
 # Встроенные функции str() и repr()
 
 На практике часто используются две встроенные функции `str()` и `repr()`. С их помощью можно получить строковое представление объекта.
@@ -546,5 +531,57 @@ print(datetime0, datetime1, datetime2, datetime3, datetime4, datetime5, datetime
 2021-08-10 00:00:00
 2021-08-10 00:00:00
 2021-08-10 18:00:00
+```
+
+# Тип данных timedelta
+
+Тип данных `timedelta` представляет собой временной интервал (разница между двумя объектами `datetime` или `date`) и используется для удобного выполнения различных манипуляций над типами `datetime` или `date`.
+
+Мы можем выбрать любые их сочетания для задания временного интервала, при этом все аргументы являются необязательными и по умолчанию равны `0`.
+
+Приведенный ниже код:
+
+```python
+from datetime import timedelta
+
+delta = timedelta(days=7, hours=20, minutes=7, seconds=17)
+
+print(delta)
+print(type(delta))
+```
+
+выводит:
+
+```no-highlight
+7 days, 20:07:17
+<class 'datetime.timedelta'>
+```
+
+## Метод `total_seconds()`
+
+Метод `total_seconds()` возвращает общее количество секунд, содержащееся во временном интервале`timedelta`.
+
+
+Приведенный ниже код:
+
+```python
+from datetime import timedelta
+
+delta = timedelta(days=50, seconds=27, microseconds=10, milliseconds=29000, minutes=5, hours=8, weeks=2)
+
+print('Количество дней =', delta.days)
+print('Количество секунд =', delta.seconds)
+print('Количество микросекунд =', delta.microseconds)
+
+print('Общее количество секунд =', delta.total_seconds())
+```
+
+выводит:
+
+```no-highlight
+Количество дней = 64
+Количество секунд = 29156
+Количество микросекунд = 10
+Общее количество секунд = 5558756.00001
 ```
 
