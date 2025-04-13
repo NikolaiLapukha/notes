@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "python/Модуль datetime.md",
+                "file": "Git/Содержание.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Модуль datetime"
+              "title": "Содержание"
+            }
+          },
+          {
+            "id": "72c033f91bd0be0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git/Анализ сделанных изменений.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Анализ сделанных изменений"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,11 +183,19 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "68456cff47df2e86",
+  "active": "72c033f91bd0be0e",
   "lastOpenFiles": [
+    "Git/Содержание.md",
+    "Git/Что такое Git?.md",
+    "Git/Основные команды.md",
+    "Git/Изменение последнего коммита.md",
+    "Git/Интеграция с GitHub.md",
+    "Git/Отмена изменений.md",
+    "Git/Анализ сделанных изменений.md",
+    "Проблемы линукс.md",
+    "python/Модуль datetime.md",
     "python/Содержание.md",
     "python/Работа с файлами.md",
-    "python/Модуль datetime.md",
     "python/Циклы.md",
     "python/Генераторы.md",
     "python/Списки (массивы).md",
@@ -188,14 +211,6 @@
     "python/Условные операторы.md",
     "python/Обработка исключений.md",
     "python/Конструкция match-case.md",
-    "python/Модуль String.md",
-    "python/ООП.md",
-    "Git/Отмена изменений.md",
-    "Git/Анализ сделанных изменений.md",
-    "Git/Интеграция с GitHub.md",
-    "Git/Основные команды.md",
-    "Git/Содержание.md",
-    "Git/Что такое Git?.md",
     "Git"
   ]
 }
