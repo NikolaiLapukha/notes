@@ -61,3 +61,12 @@ sudo npm i -g pyright
 sudo npm install -g typescript typescript-language-server
 sudo npm install -g emmet-ls
 ```
+
+7. Удаление сборки nvim:
+
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
+
