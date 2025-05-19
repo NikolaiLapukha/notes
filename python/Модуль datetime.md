@@ -853,7 +853,7 @@ calendar.setfirstweekday(calendar.SUNDAY)     # эквивалентно calenda
 
 ### Функция setfirstweekday()
 
-По умолчанию в модуле `calendar` понедельник является первым днем недели (имеет номер 00), а воскресенье – последним днем недели (имеет номер 66).
+По умолчанию в модуле `calendar` понедельник является первым днем недели (имеет номер 0), а воскресенье – последним днем недели (имеет номер 6).
 
 Функция `setfirstweekday()` позволяет изменить поведение по умолчанию и устанавливает заданный день недели в качестве начала недели.
 
@@ -921,7 +921,7 @@ print(calendar.leapdays(2020, 2025))
 
 ### Функция weekday()
 
-Функция `weekday(year, month, day)` возвращает день недели в виде целого числа (где 00 – понедельник, 66 – воскресенье) для заданной даты. Аргументы функции `year` – год начиная с 19701970, `month` – месяц в диапазоне 1−121−12, `day` – число в диапазоне 1−311−31.
+Функция `weekday(year, month, day)` возвращает день недели в виде целого числа (где 0 – понедельник, 6 – воскресенье) для заданной даты. Аргументы функции `year` – год начиная с 1970, `month` – месяц в диапазоне 1−12, `day` – число в диапазоне 1−31.
 
 Приведенный ниже код:
 
@@ -961,6 +961,25 @@ print(*calendar.monthcalendar(2021, 9), sep='\n')
 [27, 28, 29, 30, 0, 0, 0]
 ```
 
+### Функция monthrange()
+
+Функция `monthrange(year, month)` возвращает день недели первого дня месяца и количество дней в месяце в виде кортежа для указанного года `year` и месяца `month`.
+ava
+Приведенный ниже код:
+
+```python
+import calendar
+
+print(calendar.monthrange(2022, 1))     # январь 2022 года
+print(calendar.monthrange(2021, 9))     # сентябрь 2021 года
+```
+
+выводит:
+
+```no-highlight
+(5, 31)
+(2, 30)
+```
 ### Функция month()
 
 Функция `month(year, month, w=0, l=0)` возвращает календарь на месяц в многострочной строке. Аргументами функции являются: `year` (год), `month` (месяц), `w` (ширина столбца даты) и `l` (количество строк, отводимые на неделю).
@@ -1023,3 +1042,199 @@ Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su      Mo Tu We Th Fr Sa Su
 18 19 20 21 22 23 24      22 23 24 25 26 27 28      22 23 24 25 26 27 28
 25 26 27 28 29 30 31                                29 30 31
 ```
+
+# Модуль dateutil
+
+Установка модуля:
+
+```python
+pip install python-dateutil
+```
+
+## Работа с модулем
+
+После установки можно начинать работать с самим модулем.
+
+Dateutil разбит на несколько подклассов:
+
+- easter,
+- parser,
+- relativedelta,
+- rrule,
+- tz
+- и некоторые другие.
+
+## Импорт нужных методов
+
+```python
+# нужно импортировать модуль datetime
+from datetime import datetime, date
+
+from dateutil.relativedelta import relativedelta, FR, TU
+from dateutil.easter import easter
+from dateutil.parser import parse
+from dateutil import rrule
+```
+
+## Datetime и relativedata
+
+Итак, dateutil зависит от модуля datetime. Он использует его объекты.
+
+Подкласс `relativedelta` расширяет возможности модуля datetime, предоставляя функции для работы с датами и временем относительно полученных данных.
+
+```python
+# Создание нескольких объектов datetime для работы
+dt_now = datetime.now()
+print("Дата и время прямо сейчас:", dt_now)
+dt_today = date.today()
+print("Дата сегодня:", dt_today)
+# Следующий месяц
+print(dt_now + relativedelta(months=+1))
+ 
+# Следующий месяц, плюс одна неделя
+print(dt_now + relativedelta(months=+1, weeks=+1))
+ 
+# Следующий месяц, плюс одна неделя, в 17:00.
+print(dt_now + relativedelta(months=+1, weeks=+1, hour=17))
+ 
+# Следующая пятница
+print(dt_today + relativedelta(weekday=4))
+```
+
+## Datetime и easter
+
+Подкласс `easter` используется для вычисления даты и времени с учетом разных календарей.
+
+Этот подкласс довольно компактный и включает всего один аргумент с тремя вариантами:
+
+- Юлианский календарь `EASTER_JULIAN=1`.
+- Григорианский календарь `EASTER_ORTHODOX=2`.
+- Западный календарь `EASTER_WESTERN=3`.
+
+```python
+print("Юлианский календарь:", easter(2021, 1))
+print("Григорианский календарь:", easter(2021, 2))
+print("Западный календарь:", easter(2021, 3))
+```
+
+Вывод:
+
+```python
+Юлианский календарь: 2021-04-19
+Григорианский календарь: 2021-05-02
+Западный календарь: 2021-04-04
+```
+
+## Datetime и parser
+
+Подкласс `parser` добавляет продвинутый парсер даты и времени, с помощью которого можно парсить разные форматы даты и времени.
+
+```python
+print(parse("Thu Sep 25 10:36:28 BRST 2003"))
+ 
+# Мы также можем игнорировать часовой пояс
+print(parse("Thu Sep 25 10:36:28 BRST 2003", ignoretz=True))
+ 
+# Мы можем не указывать часовой пояс или год.
+print(parse("Thu Sep 25 10:36:28"))
+ 
+# Мы можем подставить переменные
+default = datetime(2020, 12, 25)
+print(parse("10:36", default=default))
+```
+
+## Datetime и rrule
+
+Подкласс `rrule` использует пользовательский ввод для предоставлении информации о повторяемости объекта `datetime`.
+
+```python
+# Вывод 5 дней от даты старта
+print(list(rrule.rrule(rrule.DAILY, count=5, dtstart=parse("20201202T090000"))))
+ 
+# Вывод 3 дней от даты старта с интервалом 10
+print(list(rrule.rrule(rrule.DAILY, interval=10, count=3, dtstart=parse("20201202T090000"))))
+ 
+# Вывод 3 дней с интервалом неделя
+print(list(rrule.rrule(rrule.WEEKLY, count=3, dtstart=parse("20201202T090000"))))
+ 
+# Вывод 3 дней с интервалом месяц
+print(list(rrule.rrule(rrule.MONTHLY, count=3, dtstart=parse("20201202T090000"))))
+ 
+# Вывод 3 дней с интервалом год
+print(list(rrule.rrule(rrule.YEARLY, count=3, dtstart=parse("20201202T090000"))))
+```
+
+# Модуль Arrow  
+
+Модуль Arrow в Python – это библиотека, заменяющая datetime. Это позволяет легко создавать экземпляры даты и времени с учетом часового пояса. Это простой модуль с удобным для человека подходом к созданию, обработке, форматированию и преобразованию дат, времени и временных меток.  
+
+Установка:
+
+```python
+pip install arrow  
+```
+
+## Пример использования 
+
+Код:
+
+```python
+import arrow
+utc_now = arrow.utcnow()
+now = arrow.now('Europe/London')
+local_now = arrow.now()
+print(utc_now)
+print(now)
+print(local_now)
+```
+
+Вывод:
+
+```python
+2025-05-18T17:01:40.964745+00:00                                                                   
+2025-05-18T18:01:40.965014+01:00                                                                    
+2025-05-18T20:01:40.965047+03:00 
+```
+
+## Преобразование часового пояса  
+
+```python
+pst_time = ist_time.to('US/Pacific') 
+print('Current PST Time =', pst_time)  
+```
+
+## Дата в форматированную строку  
+
+```python
+print('Formatted Date =', local_time.format()) 
+print('Specific Formatted Date =', local_time.format('YYYY-MM-DD HH:mm:ss ZZ'))  
+```
+
+## Создание экземпляра даты из аргументов  
+
+```python
+dt = arrow.get(2018, 9, 26) 
+print(dt)  
+```
+
+## Манипуляции с датой и временем  
+
+Мы можем использовать функции replace() и shift() для получения будущих и прошлых дат.  
+
+```python
+utc_time = arrow.utcnow() 
+print('Current UTC Time =', utc_time) 
+utc_time_updated = utc_time.replace(year=2019, month=6) 
+print('Updated UTC Time =', utc_time_updated) 
+utc_time_updated = utc_time.shift(years=-2, weeks=4) 
+print('Updated UTC Time =', utc_time_updated)  
+```
+
+Вывод:
+
+```python
+Current UTC Time = 2018-09-26T06:16:54.727167+00:00 
+Updated UTC Time = 2019-06-26T06:16:54.727167+00:00 
+Updated UTC Time = 2016-10-24T06:16:54.727167+00:00  
+```
+
