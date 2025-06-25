@@ -190,3 +190,102 @@ print(height)
 170
 ```
 
+## Атрибуты _fields, _field_defaults
+
+Именованные кортежи имеют два дополнительных атрибута: `_fields` и `_field_defaults`. Первый атрибут содержит кортеж строк, в котором перечислены имена полей. Второй атрибут содержит словарь, который сопоставляет имена полей с соответствующими значениями по умолчанию, если таковые имеются.
+
+Приведенный ниже код:
+
+```python
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height'])
+
+tim = Person('Тимур', 29, 170)
+
+print(tim)
+print(tim._fields)
+print(Person._fields)
+```
+
+выводит:
+
+```no-highlight
+Person(name='Тимур', age=29, height=170)
+('name', 'age', 'height')
+('name', 'age', 'height')
+```
+
+## Методы _make(), _replace(), _asdict()
+
+Именованные кортежи (тип `namedtuple`) являются производными от обычных кортежей (тип `tuple`), поэтому наследуют их методы, а также добавляют три новых: `_make(), _replace(), _asdict()`.
+
+### Метод _make()
+
+Метод `_make()` используется для создания именованных кортежей из итерируемых объектов (список, кортеж, строка, словарь и т.д.).
+
+Приведенный ниже код:
+
+```python
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height'])
+
+timur = Person._make(['Timur', 29, 170])
+
+print(timur)
+```
+
+выводит:
+
+```no-highlight
+Person(name='Timur', age=29, height=170)
+```
+
+### Метод _asdict()
+
+Мы можем преобразовывать именованные кортежи в словари с помощью метода `_asdict()`. Этот метод возвращает словарь, в котором имена полей используются в качестве ключей. Ключи результирующего словаря находятся в том же порядке, что и поля в исходном именованном кортеже.
+
+Приведенный ниже код:
+
+```python
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height'])
+
+timur = Person._make(['Timur', 29, 170])
+
+print(timur._asdict())
+```
+
+выводит:
+
+```no-highlight
+{'name': 'Timur', 'age': 29, 'height': 170}
+```
+
+### Метод _replace()
+
+Метод `_replace()` позволяет создавать новые именованные кортежи на основании уже существующих с заменой некоторых значений. Потребность в данном методе вызвана тем, что именованные кортежи являются неизменяемыми.
+
+Приведенный ниже код:
+
+```python
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height', 'country'])
+
+timur1 = Person('Тимур', 29, 170, 'Russia')
+timur2 = timur1._replace(age=30, country='Germany')
+
+print(timur1)
+print(timur2)
+```
+
+выводит:
+
+```no-highlight
+Person(name='Тимур', age=29, height=170, country='Russia')
+Person(name='Тимур', age=30, height=170, country='Germany')
+```
+
