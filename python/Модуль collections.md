@@ -721,3 +721,162 @@ Counter({'m': 2})
 ```
 
 
+# тип данных ChainMap
+
+В Python 3.3 в модуль `collections` добавили новый тип данных `ChainMap`, который представляет из себя объединение нескольких словарей. Этот объект группирует несколько словарей вместе, что позволяет рассматривать их как единое целое.
+## Создание ChainMap объекта
+
+Объекты типа `ChainMap` обычно создаются на основе словарей.
+
+Приведенный ниже код:
+
+```python
+from collections import ChainMap
+
+empty_chain_map = ChainMap()                      # создаем пустой ChainMap объект
+print(empty_chain_map)
+
+numbers = {'one': 1, 'two': 2}
+letters = {'a': 'A', 'b': 'B'}
+
+chain_map = ChainMap(numbers, letters)            # создаем ChainMap объект на основе словарей numbers и letters
+print(chain_map)
+```
+
+выводит:
+
+```no-highlight
+ChainMap({})
+ChainMap({'one': 1, 'two': 2}, {'a': 'A', 'b': 'B'})
+```
+
+Мы также можем создавать объекты типа `ChainMap`, используя метод `fromkeys()`.
+
+## Доступ к элементам ChainMap объекта
+
+Для получения значений по ключу в `ChainMap` объектах используется такой же механизм, как и в обычных словарях (тип `dict`). Либо мы используем квадратные скобки, либо метод `get()`.
+
+Приведенный ниже код:
+
+```python
+from collections import ChainMap
+
+numbers = {'one': 1, 'two': 2}
+letters = {'a': 'A', 'b': 'B'}
+
+alpha_num = ChainMap(numbers, letters)
+
+
+print(alpha_num['one'])
+print(alpha_num['b'])
+print(alpha_num.get('a'))
+print(alpha_num.get('c'))
+print(alpha_num.get('d', False))
+```
+
+выводит:
+
+```no-highlight
+1
+B
+A
+None
+False
+```
+
+## Итерирование по ChainMap объекту
+
+Итерирование по `ChainMap` объекту происходит **в обратном порядке** от последнего указанного словаря к первому.
+
+Приведенный ниже код:
+
+```python
+from collections import ChainMap
+
+numbers = {'one': 1, 'two': 2}
+letters = {'a': 'A', 'b': 'B'}
+
+alpha_num = ChainMap(numbers, letters)
+
+for key in alpha_num:
+    print(key, '->', alpha_num[key])
+```
+
+выводит:
+
+```no-highlight
+a -> A
+b -> B
+one -> 1
+two -> 2
+```
+
+При этом если в `ChainMap` объекте есть повторяющиеся ключи в объединяемых словарях, то мы будем получать первое из значений.
+
+## Изменение данных в ChainMap объекте
+
+Для изменения объектов типа `ChainMap` мы можем использовать те же способы, что и для изменения обычного словаря (тип `dict`). Мы можем обновлять, добавлять, удалять и извлекать элементы из `ChainMap` объекта. При этом нужно знать, что все эти операции действуют только на первый из объединяемых словарей.
+
+Приведенный ниже код:
+
+```python
+from collections import ChainMap
+
+numbers = {'one': 1, 'two': 2}
+letters = {'a': 'A', 'b': 'B'}
+
+alpha_num = ChainMap(numbers, letters)
+print(alpha_num)
+
+alpha_num['c'] = 'C'
+print(alpha_num)
+
+alpha_num['b'] = 'b'
+print(alpha_num)
+
+alpha_num.pop('two')
+print(alpha_num)
+
+del alpha_num['c']
+print(alpha_num)
+
+alpha_num.clear()
+print(alpha_num)
+```
+
+выводит:
+
+```no-highlight
+ChainMap({'one': 1, 'two': 2}, {'a': 'A', 'b': 'B'})
+ChainMap({'one': 1, 'two': 2, 'c': 'C'}, {'a': 'A', 'b': 'B'})
+ChainMap({'one': 1, 'two': 2, 'c': 'C', 'b': 'b'}, {'a': 'A', 'b': 'B'})
+ChainMap({'one': 1, 'c': 'C', 'b': 'b'}, {'a': 'A', 'b': 'B'})
+ChainMap({'one': 1, 'b': 'b'}, {'a': 'A', 'b': 'B'})
+ChainMap({}, {'a': 'A', 'b': 'B'})
+```
+
+Поскольку все изменения `ChainMap` объекта действуют только на первый из объединяемых словарей, то приведенный ниже код:
+
+```python
+from collections import ChainMap
+
+numbers = {'one': 1, 'two': 2}
+letters = {'a': 'A', 'b': 'B'}
+
+alpha_num = ChainMap({}, numbers, letters)
+print(alpha_num)
+
+alpha_num['colon'] = ':'
+alpha_num['comma'] = ','
+alpha_num['period'] = '.'
+print(alpha_num)
+```
+
+выводит:
+
+```no-highlight
+ChainMap({}, {'one': 1, 'two': 2}, {'a': 'A', 'b': 'B'})
+ChainMap({'colon': ':', 'comma': ',', 'period': '.'}, {'one': 1, 'two': 2}, {'a': 'A', 'b': 'B'})
+```
+
+Таким образом, указывая в качестве первого аргумента для `ChainMap` пустой словарь, мы получаем поведение, при котором все изменения `ChainMap` объекта не затрагивают объединяемые (исходные) словари.
