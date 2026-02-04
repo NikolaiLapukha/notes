@@ -265,3 +265,22 @@ pygame.draw.circle(surface, color, (center_x, center_y), radius)
 pygame.draw.circle(screen, BLUE, (320, 240), 50)
 ```
 
+## **Рисование линии**
+
+Линия рисуется с помощью метода `pygame.draw.line`.
+
+**Метод** :
+
+```python
+pygame.draw.line(surface, color, (start_x, start_y), (end_x, end_y), thickness)
+```
+
+**Пример кода:**
+
+```python
+
+# Рисование линии
+pygame.draw.line(screen, GREEN, (50, 50), (590, 430), 5)
+
+```
+
