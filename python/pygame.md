@@ -284,3 +284,116 @@ pygame.draw.line(screen, GREEN, (50, 50), (590, 430), 5)
 
 ```
 
+# Обработка событий
+
+## Обработка нажатий клавиш
+
+Pygame предоставляет два типа событий для клавиш:
+
+- `KEYDOWN`: возникает при нажатии клавиши.
+- `KEYUP`: возникает при отпускании клавиши.
+
+#### **Пример кода** :
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Обработка клавиш")
+
+# Цвета
+WHITE = (255, 255, 255)
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                print("Нажата стрелка влево")
+            elif event.key == pygame.K_RIGHT:
+                print("Нажата стрелка вправо")
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_LEFT:
+                print("Отпущена стрелка влево")
+            elif event.key == pygame.K_RIGHT:
+                print("Отпущена стрелка вправо")
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Обновление экрана
+    pygame.display.flip()
+
+# Завершение работы
+pygame.quit()
+```
+
+#### **Объяснение кода** :
+
+1. `pygame.KEYDOWN`: проверяет нажатие клавиш.
+2. `pygame.KEYUP`: проверяет отпускание клавиш.
+3. `event.key`: содержит код нажатой клавиши (например, `pygame.K_LEFT` для стрелки влево).
+
+## Обработка зажатых клавиш
+
+Для обработки зажатых клавиш используется метод `pygame.key.get_pressed()`. 
+
+Этот метод возвращает словарь, где каждая клавиша представлена как булева переменная (`True` — клавиша зажата, `False` — отпущена).
+
+ **Пример кода** :
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Зажатые клавиши")
+
+# Цвета
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+
+# Координаты прямоугольника
+x, y = 320, 240
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Получение состояния клавиш
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        x -= 5
+    if keys[pygame.K_RIGHT]:
+        x += 5
+    if keys[pygame.K_UP]:
+        y -= 5
+    if keys[pygame.K_DOWN]:
+        y += 5
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Рисование прямоугольника
+    pygame.draw.rect(screen, RED, (x, y, 50, 50))
+
+    # Обновление экрана
+    pygame.display.flip()
+
+# Завершение работы
+pygame.quit()
+```
+
