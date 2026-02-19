@@ -397,3 +397,114 @@ while running:
 pygame.quit()
 ```
 
+## Обработка событий мыши
+
+Pygame поддерживает три основных типа событий мыши:
+
+- `MOUSEBUTTONDOWN`: возникает при нажатии кнопки мыши.
+- `MOUSEBUTTONUP`: возникает при отпускании кнопки мыши.
+- `MOUSEMOTION`: возникает при движении мыши.
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Обработка событий мыши")
+
+# Цвета
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            print(f"Клик мыши в позиции {event.pos}")
+        elif event.type == pygame.MOUSEMOTION:
+            print(f"Движение мыши в позицию {event.pos}")
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Обновление экрана
+    pygame.display.flip()
+
+# Завершение работы
+pygame.quit()
+```
+
+# Анимация в Pygame
+
+## Простая анимация: движение объекта
+
+Давайте начнём с простой анимации — движения прямоугольника по экрану.
+
+ **Метод** :
+
+Используйте переменные для хранения координат объекта и изменяйте их в игровом цикле.
+
+**Пример кода** :
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Анимация: движение")
+
+# Цвета
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+
+# Начальные координаты прямоугольника
+x, y = 50, 50
+speed_x, speed_y = 3, 2  # Скорость движения
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Обновление координат
+    x += speed_x
+    y += speed_y
+
+    # Отскок от границ экрана
+    if x <= 0 or x >= 640 - 50:  # Проверка горизонтальных границ
+        speed_x = -speed_x
+    if y <= 0 or y >= 480 - 50:  # Проверка вертикальных границ
+        speed_y = -speed_y
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Рисование прямоугольника
+    pygame.draw.rect(screen, RED, (x, y, 50, 50))
+
+    # Обновление экрана
+    pygame.display.flip()
+
+    # Контроль частоты кадров
+    pygame.time.delay(10)
+
+# Завершение работы
+pygame.quit()
+```
+
+#### **Объяснение кода** :
+
+1. `x, y`: координаты прямоугольника.
+2. `speed_x, speed_y`: скорость движения по осям X и Y.
+3. `pygame.time.delay(10)`: задержка между кадрами (в миллисекундах).
