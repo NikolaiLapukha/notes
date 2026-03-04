@@ -508,3 +508,122 @@ pygame.quit()
 1. `x, y`: координаты прямоугольника.
 2. `speed_x, speed_y`: скорость движения по осям X и Y.
 3. `pygame.time.delay(10)`: задержка между кадрами (в миллисекундах).
+## Управление частотой кадров
+
+Чтобы анимация была плавной, важно контролировать частоту кадров. Для этого используется объект `pygame.time.Clock`.
+
+**Метод:**
+
+```python
+clock = pygame.time.Clock()
+clock.tick(FPS)
+```
+
+**Пример кода:**
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Анимация с FPS")
+
+# Цвета
+WHITE = (255, 255, 255)
+BLUE = (0, 0, 255)
+
+# Начальные координаты круга
+x, y = 320, 240
+speed_x, speed_y = 4, 3
+
+# Частота кадров
+FPS = 60
+clock = pygame.time.Clock()
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Обновление координат
+    x += speed_x
+    y += speed_y
+
+    # Отскок от границ экрана
+    if x <= 25 or x >= 640 - 25:
+        speed_x = -speed_x
+    if y <= 25 or y >= 480 - 25:
+        speed_y = -speed_y
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Рисование круга
+    pygame.draw.circle(screen, BLUE, (x, y), 25)
+
+    # Обновление экрана
+    pygame.display.flip()
+
+    # Контроль частоты кадров
+    clock.tick(FPS)
+
+# Завершение работы
+pygame.quit()
+```
+
+
+## Анимация изменения размера
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Анимация: изменение размера")
+
+# Цвета
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+
+# Начальные параметры прямоугольника
+x, y = 320, 240
+size = 50
+growth = 2  # Скорость изменения размера
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Обновление размера
+    size += growth
+
+    # Обратное направление при достижении предела
+    if size <= 20 or size >= 200:
+        growth = -growth
+
+    # Заливка фона
+    screen.fill(WHITE)
+
+    # Рисование прямоугольника
+    pygame.draw.rect(screen, GREEN, (x - size // 2, y - size // 2, size, size))
+
+    # Обновление экрана
+    pygame.display.flip()
+
+    # Контроль частоты кадров
+    pygame.time.delay(20)
+
+# Завершение работы
+pygame.quit()
+```
