@@ -627,3 +627,65 @@ while running:
 # Завершение работы
 pygame.quit()
 ```
+
+## Анимация изменения цвета
+
+```python
+import pygame
+
+# Инициализация Pygame
+pygame.init()
+
+# Создание окна
+screen = pygame.display.set_mode((640, 480))
+pygame.display.set_caption("Анимация: изменение цвета")
+
+# Начальные параметры цвета
+color = [255, 0, 0]  # Красный
+direction = [1, -1, 1]  # Направление изменения RGB
+
+# Основной цикл
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Обновление цвета
+    for i in range(3):
+        color[i] += direction[i]
+        if color[i] <= 0 or color[i] >= 255:
+            direction[i] = -direction[i]
+
+    # Заливка фона
+    screen.fill(color)
+
+    # Обновление экрана
+    pygame.display.flip()
+
+    # Контроль частоты кадров
+    pygame.time.delay(10)
+
+# Завершение работы
+pygame.quit()
+```
+
+# Работы с текстом
+
+Pygame предоставляет модуль `pygame.font` для работы с текстом.
+
+  
+Для отображения текста нужно:
+
+1. **Создать объект шрифта** : определить шрифт и размер.
+2. **Создать текстовую поверхность** : преобразовать текст в графический объект.
+3. **Отобразить текст на экране** : использовать метод `blit`.
+
+**Прииер кода** :
+
+```python
+font = pygame.font.Font(None, size: int)  # Создание объекта шрифта
+text_surface = font.render("Text", True, color: tuple)  # Создание текстовой поверхности
+screen.blit(text_surface, (x, y))  # Отображение текста
+```
+
